@@ -8,7 +8,7 @@ import com.vince.utils.UserIO;
 public class UserServiceImpl implements UserService {
 
 	@Override
-	public User register(User user) throws BusinessException {
+	public  User register(User user) throws BusinessException {
 		// TODO Auto-generated method stub
 		UserIO userIO =new UserIO();
 		userIO.add(user);

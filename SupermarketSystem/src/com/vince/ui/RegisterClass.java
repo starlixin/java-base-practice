@@ -16,7 +16,11 @@ public class RegisterClass extends BaseClass {
 		User user =new User(username,password);
 		
 		UserService userservice =new UserServiceImpl();
-		UserService.register(user);
+		try {
+			userservice.register(user);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
 	}
 	
 }

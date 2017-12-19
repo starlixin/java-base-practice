@@ -5,5 +5,5 @@ import com.vince.utils.BusinessException;
 
 public interface UserService {
 
-	public User register(User user) throws BusinessException;
+	public  User register(User user) throws BusinessException ;
 }

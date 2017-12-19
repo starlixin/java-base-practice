@@ -4,7 +4,10 @@ import com.vince.ui.WelcomeClass;
 
 public class mainClass {
 
+	public static WelcomeClass we ;
+	
 	public static void main (String[] args){
-		new WelcomeClass().start();
+		we =new WelcomeClass();
+		we.start();
 	}
 }
