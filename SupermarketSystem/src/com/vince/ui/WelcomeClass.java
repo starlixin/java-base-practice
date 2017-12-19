@@ -9,17 +9,30 @@ public class WelcomeClass extends BaseClass{
 			println(getString("info.login.reg"));
 			println(getString("info.select"));
 			String select =input.nextLine();
-			switch (select){
-			case "1":
+			if("1"==select){
 				flag =false;
-				break;
-			case "2":
+				println("µÇÂ¼");
+			}else if(select.equals("2")){
 				flag = false;
-				break;
-			default:
+				println("×¢²á");
+				new RegisterClass().register();
+			}else{
 				println(getString("input.error"));
-				break;
 			}
+//			switch (select){
+//			case "1":
+//				flag =false;
+//				println("µÇÂ¼");
+//				break;
+//			case "2":
+//				flag = false;
+////				println("×¢²á");
+//				new RegisterClass().register();
+//				break;
+//			default:
+//				println(getString("input.error"));
+//				break;
+//			}
 		}
 		
 		
